@@ -1,0 +1,8 @@
+POST http://localhost:3000/api/personas
+Content-Type: application/json
+
+{
+    "nombre": "Eduardo Lerma",
+    "correo": "lerma.eduardo22@gmail.com",
+    "kilometros": 60
+}
