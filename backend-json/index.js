@@ -7,6 +7,12 @@ app.use(express.json())
 
 const PORT = process.env.PORT
 
+app.get('/api/personas', (req, res) => {
+    Person.find({}).then(people => {
+        res.json(people)
+    })
+})
+
 app.post('/api/personas', (req, res) => {
     const body = req.body
 
